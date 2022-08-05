@@ -1,0 +1,141 @@
+{
+    "clothing": [
+      {
+        "id": 1,
+        "name": "grey_boots",
+        "href": "src/img/wheel0.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+       
+      },
+      {
+        "id": 2,
+        "name": "grey_boots",
+        "href": "src/img/wheel1.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      {
+        "id": 3,
+        "name": "grey_boots",
+        "href": "src/img/wheel2.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      {
+        "id": 4,
+        "name": "grey_boots",
+        "href": "src/img/wheel3.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      {
+        "id": 5,
+        "name": "grey_boots",
+        "href": "src/img/wheel4.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+
+      {
+        "id": 6,
+        "name": "grey_boots",
+        "href": "src/img/pants0.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      {
+        "id": 7,
+        "name": "grey_boots",
+        "href": "src/img/pants1.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      {
+        "id": 8,
+        "name": "grey_boots",
+        "href": "src/img/pants2.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      {
+        "id": 9,
+        "name": "grey_boots",
+        "href": "src/img/pants3.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      {
+        "id": 10,
+        "name": "grey_boots",
+        "href": "src/img/pants4.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      {
+        "id": 11,
+        "name": "grey_boots",
+        "href": "src/img/shirt0.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      {
+        "id": 12,
+        "name": "grey_boots",
+        "href": "src/img/shirt1.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      { 
+        "id": 13,
+        "name": "grey_boots",
+        "href": "src/img/shirt2.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      {
+        "id": 14,
+        "name": "grey_boots",
+        "href": "src/img/shirt3.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      },
+      {
+        "id": 15,
+        "name": "grey_boots",
+        "href": "src/img/shirt4.jpg",
+        "isWheel": "true",
+        "isPants": "false",
+        "isShirt": "false",
+        "isHat": "false"
+      }
+    ]
+  }
