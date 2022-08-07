@@ -1,5 +1,5 @@
 {
-    "clothing": [
+    "wheels": [
       {
         "id": 1,
         "name": "grey_boots",
@@ -45,8 +45,8 @@
         "isPants": "false",
         "isShirt": "false",
         "isHat": "false"
-      },
-
+      }],
+      "shirt":[ 
       {
         "id": 6,
         "name": "grey_boots",
