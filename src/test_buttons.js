@@ -1,13 +1,17 @@
-const axios = require("axios");
+import { useState } from "react";
+import {axios }from 'axios';
 const Buttons = () => {
-    let shoes = []
+    const [shoes, setShoes] = useState([]);//shoes id:(1-5) localhost http://localhost:8000/wheels
+    const [shirts, setShirts] = useState([]);//shoes id:(5-10) localhost http://localhost:8000/shirts
+    const [pants, setPants] = useState([]);//shoes id:(10-15) localhost http://localhost:8000/wheels
+    const [hats, setHats] = useState([]);//hat id:(15-20) localhost http://localhost:8000/wheels
     // js server axios get 
   const handleClick = () => {
-    // Робимо запит для користувача з даним ID
+    //  запит для користувача 
     axios
-      .get("http://localhost:3003/clothing/")
+      .get("http://localhost:8000/")
       .then(function (response) {
-        // обробка успішного запиту
+        
         console.log(response.data);
          shoes = response.data
       })
@@ -17,18 +21,25 @@ const Buttons = () => {
       })
       .then(function () {
        
-      }); // виконується завжд
+      }); 
 
-    // За бажанням вищевказаний запит також можна виконати так
+    
     console.log("it works");
   };
   return (
     <div className="buttons">
-      <h2>chose your shoes</h2>
+      <div className="shoes">
+        <h2>chose your shoes</h2>
       <button onClick={handleClick}>shoes</button>
-      {shoes.map((item) => { 
-      return (<span>{item}</span>)
-      })}
+    
+      </div>
+
+
+
+
+
+
+      
       <h2>chose your pants</h2>
       <button onClick={handleClick}>pants</button>
       <h2>chose your shirts</h2>
