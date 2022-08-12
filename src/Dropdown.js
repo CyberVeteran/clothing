@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { axios } from "axios";
+import axios from "axios";
 
 const Dropdown = () => {
   const [shoes, setShoes] = useState([]);
@@ -7,46 +7,62 @@ const Dropdown = () => {
   const [pants, setPants] = useState([]);
   const [hats, setHats] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [err, setErr] = useState('');
+  const [err, setErr] = useState("");
+  const [dropDownState, setdropDownState] = useState(false);
+  const [selected, setSelected] = useState();
 
-  const HandleClick = async () => {
+  const handleClick = async () => {};
+//<button onClick={handleClick}>render</button>
+  const fetchData = async function () {
     setIsLoading(true);
-     try {
-       shoes = await axios.get("http://localhost:8000/")
-      
-      .  setData(shoes);
+    try {
+      const result = await axios.get("http://localhost:8000/wheels");
+      console.log(result);
+      setShoes(result.data);
     } catch (err) {
       setErr(err.message);
     } finally {
       setIsLoading(false);
     }
-  }
-  const [DropdownState, setDropdownState] = useState({ open: false });
+  };
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-  const HandleDropdownClick = () =>
-    setDropdownState({ open: !DropdownState.open });
+  const HandleDropdownClick = () => setdropDownState(!dropDownState);
   return (
     <div className="buttons">
       <button onClick={HandleDropdownClick}>show shoes</button>
-      {DropdownState.open && (
+      {dropDownState && (
         <div className="shoes">
-          <button onClick={HandleClick}>Fetch data</button>
-          {shoes.map((shoe, index) => {
-            <div className="shoes-prewiev" key={shoe.id}>
-              <ul>
-                <li>{shoe.name}</li>
-              </ul>
-            </div>;
-          })}
+          
+          <select
+            onChange={(e) => {
+              const selectedImage = e.target.value;
+              setSelected(selectedImage);
+            }}
+          >
+            <option disabled selected>please select</option>
+            {shoes.map((shoe, index) => (
+              <option value={shoe.href} key={shoe.id}>
+                {shoe.name}
+              </option>
+            ))}
+          </select>
+          
+          <img src={selected} ></img>
         </div>
       )}
+      
     </div>
+    
+    
   );
-;
-}
+};
 export default Dropdown;
 
 /*
+<div><button onClick={handleClick}>render</button></div>
 
 <h2>chose your shoes</h2>
         <button onClick={handleClick}>show shoes</button>
